@@ -6,6 +6,7 @@
   "scripts": {
     "start": "tsc-watch && node dist/app/app.js",
     "dev-server": "tsc-watch --noClear -p ./tsconfig.json --onSuccess \"node ./dist/app/app.js\"",
+    "eslint": "eslint .",
     "test": "jest"
   },
   "author": "",
