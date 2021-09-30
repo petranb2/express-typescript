@@ -1,26 +1,26 @@
 class UserViewModel {
     private username;
     private email;
-    constructor(username: string, email: string) {
-        this.username = username;
-        this.email = email;
-    }
-    getUsername() {
-        return this.username;
+    constructor (username: string, email: string) {
+      this.username = username
+      this.email = email
     }
 
-    setUsername(username: string) {
-        this.username = username;
+    getUsername () {
+      return this.username
     }
 
-    getEmail() {
-        return this.email;
+    setUsername (username: string) {
+      this.username = username
     }
 
-    setEmail(email: string) {
-        this.email = email;
+    getEmail () {
+      return this.email
     }
 
+    setEmail (email: string) {
+      this.email = email
+    }
 }
 
-export default UserViewModel;
+export default UserViewModel

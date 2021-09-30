@@ -1,8 +1,8 @@
-import UserViewModel from '../models/view/user.ViewModel';
+import UserViewModel from '../models/view/user.ViewModel'
 
-function getUserInfo() {
-    const userView = new UserViewModel('petran', 'petranb2@gmail.com');
-    return userView;
+function getUserInfo () {
+  const userView = new UserViewModel('petran', 'petranb2@gmail.com')
+  return userView
 }
 
-export default { getUserInfo };
+export default { getUserInfo }
