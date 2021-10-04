@@ -146,10 +146,10 @@ export default {
   // testLocationInResults: false,
 
   // The glob patterns Jest uses to detect test files
-  // testMatch: [
-  //   "**/__tests__/**/*.[jt]s?(x)",
-  //   "**/?(*.)+(spec|test).[tj]s?(x)"
-  // ],
+  testMatch: [
+    "**/__tests__/**/*.[jt]s?(x)",
+    "**/?(*.)+(spec|test).[tj]s?(x)"
+  ],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
   // testPathIgnorePatterns: [
@@ -192,7 +192,12 @@ export default {
   // Whether to use watchman for file crawling
   // watchman: true,
   moduleNameMapper: {
-    'src/(.*)': '<rootDir>/src/$1',
-    '@repositories/(.*)': '<rootDir>/src/core/repositories/$1',
+    "@routes/(.*)": "<rootDir>/src/app/HTTPControllers/$1",
+    "@cases/(.*)": "<rootDir>/src/core/cases/$1",
+    "@repositories/(.*)": "<rootDir>/src/core/repositories/$1",
+    "@services/(.*)": "<rootDir>/src/core/services/$1",
+    "@app/(.*)": "<rootDir>/src/app/$1",
+    "@core/(.*)": "<rootDir>/src/core/$1",
+    "src/(.*)": "<rootDir>/src/$1",
   }
 }

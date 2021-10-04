@@ -3,4 +3,4 @@ interface FactoryInterface {
     get: (alias: String) => Object
 }
 
-export default FactoryInterface;
+export default FactoryInterface

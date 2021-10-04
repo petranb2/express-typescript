@@ -1,12 +1,10 @@
-import FactoryInterface from '../Interfaces/FactoryInterface';
-
+import FactoryInterface from '../Interfaces/FactoryInterface'
 
 class RepositoryFactory implements FactoryInterface {
-
     readonly map: Map<String, { getInstance: () => Object }>;
 
-    constructor(repositories: Map<String, { getInstance: () => Object }>) {
-        this.map = repositories
+    constructor (repositories: Map<String, { getInstance: () => Object }>) {
+      this.map = repositories
     }
 
     /**
@@ -14,11 +12,11 @@ class RepositoryFactory implements FactoryInterface {
      * @param alias the alias of the repository
      */
     get = (alias: String): Object => {
-        const repo = this.map.get(alias)
-        if (!repo) {
-            throw new Error(`Repo with alias::${alias} not found`)
-        }
-        return repo.getInstance()
+      const repo = this.map.get(alias)
+      if (!repo) {
+        throw new Error(`Repo with alias::${alias} not found`)
+      }
+      return repo.getInstance()
     }
 }
 

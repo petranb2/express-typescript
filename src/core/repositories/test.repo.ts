@@ -1,6 +1,6 @@
 
 class TestRepository {
-  getSomething(): void {
+  getSomething (): void {
     console.log('TestRepository::getSomething()')
   }
 }
