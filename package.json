@@ -6,7 +6,7 @@
     "scripts": {
         "build": "rimraf ./build && tsc",
         "start": "npm run build && node ./dist/app/app.js",
-        "dev-server": "tsc-watch --noClear -p ./tsconfig.json --onSuccess \"node ./dist/app/startApp.js\"",
+        "dev-server": "tsc-watch --noClear -p ./tsconfig.json --onSuccess \"node ./dist/app/app.js\"",
         "eslint": "eslint ./src/**/* --ext .ts",
         "eslint-fix": "eslint . --ext .ts --fix",
         "test": "jest"

@@ -1,7 +1,6 @@
 import { Connection, createConnection } from 'typeorm'
 import userService from '@services/user.service'
 import { User } from '@core/models/persist/user.PersistModel'
-import { WaitingUser } from '@core/models/persist/waitingUser.persist.model';
 
 const setupDB = async (): Promise<any> => {
   let connection: Connection;
@@ -9,7 +8,7 @@ const setupDB = async (): Promise<any> => {
     connection = await createConnection({
       type: 'postgres',
       url: 'postgresql://postgres:123456789@localhost:5432/waitingUsers-TBC',
-      entities: [WaitingUser, User],
+      entities: [ User],
       synchronize: true
     })
     console.log('Succefull connection with DB')
