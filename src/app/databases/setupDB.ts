@@ -8,7 +8,7 @@ const setupDB = async (): Promise<any> => {
   try {
     connection = await createConnection({
       type: 'postgres',
-      url: 'postgresql://postgres:123456789@localhost:5432/waitingUsers-TBC',
+      url: 'postgresql://postgres:XzcgKjALvMdhDP7yx18S@containers-us-west-19.railway.app:6937/railway',
       entities: [WaitingUser, User],
       synchronize: true
     })
