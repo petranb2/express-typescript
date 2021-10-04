@@ -5,7 +5,7 @@
     "main": "dist/app.js",
     "scripts": {
         "build": "rimraf ./build && tsc",
-        "start": "npm run build && node ./dist/app/app.js",
+        "start": "npm run build && node ./dist/app/startApp.js",
         "dev-server": "tsc-watch --noClear -p ./tsconfig.json --onSuccess \"node ./dist/app/startApp.js\"",
         "eslint": "eslint ./src/**/* --ext .ts",
         "eslint-fix": "eslint . --ext .ts --fix",
